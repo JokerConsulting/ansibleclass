@@ -3,14 +3,14 @@
   hosts: localhost
   connection: local
   vars:
-    user: write your username here
+    user: kjoh0201
   tasks:
     - name: Create resource group
       azure.azcollection.azure_rm_resourcegroup:
-        name: "webserver_{{ kjoh0201 }}"
+        name: "webserver_{{ user }}"
         location: northeurope
         tags:
-            solution: "webserver_{{ kjoh0201 }}"
+            solution: "webserver_{{ user }}"
             delete: ansibletraining
       register: rg
     - name: Show RG
