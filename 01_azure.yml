@@ -7,10 +7,10 @@
   tasks:
     - name: Create resource group
       azure.azcollection.azure_rm_resourcegroup:
-        name: "webserver_{{ user }}"
+        name: "webserver_{{ kjoh0201 }}"
         location: northeurope
         tags:
-            solution: "webserver_{{ user }}"
+            solution: "webserver_{{ kjoh0201 }}"
             delete: ansibletraining
       register: rg
     - name: Show RG

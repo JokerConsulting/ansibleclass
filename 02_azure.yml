@@ -18,7 +18,7 @@
         name: "{{ virtual_network_name }}"
         address_prefixes_cidr: "10.99.0.0/16"
         tags:
-            solution: "webserver_{{ user }}"
+            solution: "webserver_{{ kjoh0201 }}"
             delete: ansibletraining
 
     - name: Create a subnet
